@@ -4,11 +4,9 @@
   "version": "1.0",
   "description": "Tracks time spent on websites and shows productivity insights.",
 
-  "permissions": [
-    "tabs",
-    "storage",
-    "idle"
-  ],
+  "permissions": ["tabs", "storage", "idle", "alarms"],
+
+  "host_permissions": ["https://api.openai.com/*"],
 
   "background": {
     "service_worker": "background.js"
